@@ -3,6 +3,12 @@ I've forked this project to try and keep it active.
 
 The original can be found here: https://github.com/OlivierCC/spfx-40-fantastics
 
+Fix #1: Updated packages.json so that it builds properly.
+
+Update #1: Made Tile Menu work in Full screen mode.
+
+Update #2 Updated CDN.
+
 # The MIT License (MIT)
 
 Copyright (c) 2016 Olivier Carpentier
