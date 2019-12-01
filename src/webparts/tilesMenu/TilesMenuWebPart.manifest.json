@@ -6,7 +6,7 @@
   "componentType": "WebPart",
   "version": "1.0.0",
   "manifestVersion": 2,
-
+  "supportsFullBleed": true,
   "preconfiguredEntries": [{
     "groupId": "72505c62-b3c0-4cc3-89d8-f2adc8d962a0",
     "group": { "default": "News Management" },

@@ -28,7 +28,7 @@
       "textPanelBackgroundColor": "rgba(0,0,0,0.6)",
       "items": [
         {"Title": "Attic", "Enabled": "true",
-          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/attic.jpg",
+          "Link Text": "View", "Link Url": "images/coverflow/attic.jpg",
           "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/attic.jpg"},
         {"Title": "Aurora", "Enabled": "true",
           "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/aurora.jpg",
