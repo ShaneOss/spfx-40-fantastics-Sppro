@@ -9,6 +9,8 @@ Update #1: Made Tile Menu work in Full screen mode.
 
 Update #2 Updated CDN.
 
+Update #3 Added tiles_min_columns, tiles_max_columns, tiles_justified_row_height options to tile gallery (see unitegallery - https://unitegallery.net/)
+
 # The MIT License (MIT)
 
 Copyright (c) 2016 Olivier Carpentier
