@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./NewsTicker.module.css');
 const styles = {
-  carousel3D: 'carousel3D_c3de441b',
-  container: 'container_c3de441b',
-  row: 'row_c3de441b',
-  listItem: 'listItem_c3de441b',
-  button: 'button_c3de441b',
+  carousel3D: 'carousel3D_22b38664',
+  container: 'container_22b38664',
+  row: 'row_22b38664',
+  listItem: 'listItem_22b38664',
+  button: 'button_22b38664',
 };
 
 export default styles;

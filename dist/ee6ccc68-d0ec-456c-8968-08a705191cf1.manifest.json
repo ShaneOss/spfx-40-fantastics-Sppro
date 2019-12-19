@@ -1,0 +1,152 @@
+{
+  "id": "ee6ccc68-d0ec-456c-8968-08a705191cf1",
+  "alias": "TilesMenu",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "supportsFullBleed": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "72505c62-b3c0-4cc3-89d8-f2adc8d962a0",
+      "group": {
+        "default": "News Management"
+      },
+      "title": {
+        "default": "Tiles Menu"
+      },
+      "description": {
+        "default": "This Web Part allows you to very easily create a menu in form of tiles that is responsive and adapted for mobile. You can directly manage the items on your menu, with a title, an image and manage Visual rendering options."
+      },
+      "officeFabricIconFontName": "Tiles",
+      "properties": {
+        "justified": true,
+        "enableIcons": false,
+        "enableShadow": false,
+        "enableBorder": false,
+        "tilesMinColumns": 2,
+        "tilesMaxColumns": 0,
+        "tilesJustifiedRowHeight": 150,
+        "spaceBetweenCols": 3,
+        "borderColor": "#CCCCCC",
+        "border": 2,
+        "textPanelEnable": true,
+        "textPanelAlwaysOnTop": false,
+        "textPanelPosition": "inline-bottom",
+        "textPanelOpacity": 0.4,
+        "items": [
+          {
+            "Title": "Discover the new work station",
+            "Enable": "true",
+            "Description": "Smart, fast & easy: discover the new work station",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/pexels-photo-204611-large.jpeg"
+          },
+          {
+            "Title": "All the Intranet in your Smart Phone",
+            "Enable": "true",
+            "Description": "Stay connected with the Intranet App",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/pexels-photo-large.jpg"
+          },
+          {
+            "Title": "Take a break!",
+            "Enable": "true",
+            "Description": "Discover the new coffees selection",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/pexels-photo-70221-large.jpeg"
+          },
+          {
+            "Title": "Discover the new meeting areas",
+            "Enable": "true",
+            "Description": "New meeting areas available at Level 2",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/space-desk-workspace-coworking-large.jpg"
+          },
+          {
+            "Title": "New travel policies",
+            "Enable": "true",
+            "Description": "The new travel policies are available",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/pexels-photo-large-car.jpg"
+          },
+          {
+            "Title": "New commons",
+            "Enable": "false",
+            "Description": "View the video of the new commons",
+            "Link Url": "#",
+            "Picture": "//spfx40fantastics.azureedge.net/spfx40fantastics/images/menu/pexels-photo-58801-large.jpeg"
+          }
+        ]
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "tilesMenu.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "tilesMenu.bundle": {
+        "type": "path",
+        "path": "dist/tilesMenu.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "unitegallery": {
+        "type": "path",
+        "path": "src/javascripts/unitegallery/unitegallery.min.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "ug-theme-tiles": {
+        "type": "path",
+        "path": "src/javascripts/unitegallery/ug-theme-tiles.js",
+        "globalDependencies": [
+          "jquery",
+          "unitegallery"
+        ],
+        "globalName": "jQuery"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "TilesMenuStrings": {
+        "defaultPath": "lib/webparts/tilesMenu/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

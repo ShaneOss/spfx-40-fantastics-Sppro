@@ -8,6 +8,9 @@ export interface ITilesMenuWebPartProps {
   spaceBetweenCols: number;
   borderColor: string;
   border: number;
+  tilesMinColumns: number,
+  tilesMaxColumns: number,
+  tilesJustifiedRowHeight: number,
   textPanelEnable: boolean;
   textPanelAlwaysOnTop: boolean;
   textPanelPosition: string;

@@ -19,6 +19,11 @@ declare interface ITilesMenuStrings {
   TextPanelFontColorFieldLabel: string;
   EnableShadowFieldLabel: string;
   EnableBorderFieldLabel: string;
+  TilesMinCol: string;
+  TilesMaxCol: string;
+  JustifiedOptions: string;
+  TilesJustifiedRowHeight: string;
+  ColumnGroupName: string;
   SpaceBetweenColsFieldLabel: string;
   BorderColorFieldLabel: string;
   BorderFieldLabel: string;

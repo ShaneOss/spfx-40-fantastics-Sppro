@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./NewsCarousel.module.css');
 const styles = {
-  tilesGallery: 'tilesGallery_2b5cd063',
-  container: 'container_2b5cd063',
-  row: 'row_2b5cd063',
-  listItem: 'listItem_2b5cd063',
-  button: 'button_2b5cd063',
+  tilesGallery: 'tilesGallery_1f33c1c0',
+  container: 'container_1f33c1c0',
+  row: 'row_1f33c1c0',
+  listItem: 'listItem_1f33c1c0',
+  button: 'button_1f33c1c0',
 };
 
 export default styles;

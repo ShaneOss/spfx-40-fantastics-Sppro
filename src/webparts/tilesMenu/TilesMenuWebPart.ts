@@ -11,7 +11,8 @@ import {
   IWebPartContext,
   PropertyPaneDropdown,
   PropertyPaneToggle,
-  PropertyPaneSlider
+  PropertyPaneSlider,
+  PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
 import { Version } from '@microsoft/sp-core-library';
 
@@ -110,7 +111,7 @@ export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWe
   }
 
   private renderContents(): void {
-
+      console.log("this.properties", this.properties);
       ($ as any)("#" + this.guid + "-gallery").unitegallery({
         tile_as_link: true,
         tiles_type: this.properties.justified === true ? "justified": '',
@@ -128,7 +129,10 @@ export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWe
         tile_enable_border: this.properties.enableBorder,
         tile_border_width: this.properties.border,
         tile_border_color: this.properties.borderColor,
-        tile_enable_shadow: this.properties.enableShadow
+        tile_enable_shadow: this.properties.enableShadow,
+        tiles_min_columns: this.properties.tilesMinColumns,
+        tiles_max_columns: this.properties.tilesMaxColumns,
+        tiles_justified_row_height: this.properties.tilesJustifiedRowHeight
       });
   }
 
@@ -316,6 +320,31 @@ export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWe
                   properties: this.properties,
                   key: 'tilesMenuBorderColorField'
                 })
+              ]
+            },
+            {
+              groupName: strings.ColumnGroupName,
+              groupFields: [
+                PropertyPaneSlider('tilesMinColumns', {
+                  label: strings.TilesMinCol,
+                  min: 0,
+                  max: 50,
+                  step: 1
+                }),
+                PropertyPaneSlider('tilesMaxColumns', {
+                  label: strings.TilesMaxCol,
+                  min: 0,
+                  max: 50,
+                  step: 1
+                })
+              ]
+            },
+            {
+              groupName: strings.JustifiedOptions,
+              groupFields: [
+                PropertyPaneTextField('tilesJustifiedRowHeight', {
+                  label: strings.TilesJustifiedRowHeight,
+                })            
               ]
             }
           ]

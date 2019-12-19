@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./PieChart.module.css');
 const styles = {
-  carousel3D: 'carousel3D_57687e49',
-  container: 'container_57687e49',
-  row: 'row_57687e49',
-  listItem: 'listItem_57687e49',
-  button: 'button_57687e49',
+  carousel3D: 'carousel3D_bc37adc9',
+  container: 'container_bc37adc9',
+  row: 'row_bc37adc9',
+  listItem: 'listItem_bc37adc9',
+  button: 'button_bc37adc9',
 };
 
 export default styles;

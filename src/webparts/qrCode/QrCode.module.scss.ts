@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./QrCode.module.css');
 const styles = {
-  carousel3D: 'carousel3D_f2bc2bc8',
-  container: 'container_f2bc2bc8',
-  row: 'row_f2bc2bc8',
-  listItem: 'listItem_f2bc2bc8',
-  button: 'button_f2bc2bc8',
+  carousel3D: 'carousel3D_c3d6f2cd',
+  container: 'container_c3d6f2cd',
+  row: 'row_c3d6f2cd',
+  listItem: 'listItem_c3d6f2cd',
+  button: 'button_c3d6f2cd',
 };
 
 export default styles;

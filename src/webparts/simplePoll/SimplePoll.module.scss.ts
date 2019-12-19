@@ -1,10 +1,10 @@
 /* tslint:disable */
 require('./SimplePoll.module.css');
 const styles = {
-  SimplePoll: 'SimplePoll_ed6e948a',
-  container: 'container_ed6e948a',
-  workingOnItSpinner: 'workingOnItSpinner_ed6e948a',
-  loadingLabel: 'loadingLabel_ed6e948a',
+  SimplePoll: 'SimplePoll_20f9b38c',
+  container: 'container_20f9b38c',
+  workingOnItSpinner: 'workingOnItSpinner_20f9b38c',
+  loadingLabel: 'loadingLabel_20f9b38c',
 };
 
 export default styles;

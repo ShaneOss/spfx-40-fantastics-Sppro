@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./RadarChart.module.css');
 const styles = {
-  carousel3D: 'carousel3D_66c069dd',
-  container: 'container_66c069dd',
-  row: 'row_66c069dd',
-  listItem: 'listItem_66c069dd',
-  button: 'button_66c069dd',
+  carousel3D: 'carousel3D_62925a92',
+  container: 'container_62925a92',
+  row: 'row_62925a92',
+  listItem: 'listItem_62925a92',
+  button: 'button_62925a92',
 };
 
 export default styles;

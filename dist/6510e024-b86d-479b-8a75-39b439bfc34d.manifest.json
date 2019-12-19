@@ -1,0 +1,113 @@
+{
+  "id": "6510e024-b86d-479b-8a75-39b439bfc34d",
+  "alias": "PieChart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "7a7091d9-d176-450b-a04f-9fa48ca1981b",
+      "group": {
+        "default": "Charts, Graphs and Maps"
+      },
+      "title": {
+        "default": "Pie Chart"
+      },
+      "description": {
+        "default": "Insert a Pie chart with a few clicks in your SharePoint page. You can edit the data, choose values, colors, legends and all the graphics. You can generate graphs to fixed sizes or responsive mode."
+      },
+      "officeFabricIconFontName": "PieDouble",
+      "properties": {
+        "responsive": false,
+        "dimension": {
+          "width": "400px",
+          "height": "400px"
+        },
+        "cutoutPercentage": 0,
+        "animateRotate": true,
+        "animateScale": false,
+        "position": "top",
+        "title": "Colors Pie",
+        "titleEnable": true,
+        "titleColor": "#666",
+        "titleSize": "12px",
+        "legendEnable": true,
+        "legendPosition": "top",
+        "legendColor": "#666",
+        "legendSize": "12px",
+        "items": [
+          {
+            "Label": "Red",
+            "Value": 300,
+            "Color": "#FF6384",
+            "Hover Color": "#FF6384"
+          },
+          {
+            "Label": "Blue",
+            "Value": 50,
+            "Color": "#36A2EB",
+            "Hover Color": "#36A2EB"
+          },
+          {
+            "Label": "Yellow",
+            "Value": 100,
+            "Color": "#FFCE56",
+            "Hover Color": "#FFCE56"
+          }
+        ]
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "pieChart.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "pieChart.bundle": {
+        "type": "path",
+        "path": "dist/pieChart.bundle.js"
+      },
+      "chartjs": {
+        "type": "path",
+        "path": "src/javascripts/chartjs/Chart.min.js",
+        "globalName": "Chart"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "PieChartStrings": {
+        "defaultPath": "lib/webparts/pieChart/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

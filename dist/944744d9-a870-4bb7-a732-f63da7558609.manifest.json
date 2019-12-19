@@ -1,0 +1,73 @@
+{
+  "id": "944744d9-a870-4bb7-a732-f63da7558609",
+  "alias": "StockInfo",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "1df557f4-e29a-4d2d-b1bf-a6b0b68aae90",
+      "group": {
+        "default": "Tools"
+      },
+      "title": {
+        "default": "Stock Info"
+      },
+      "description": {
+        "default": "Generates as graph picture the current stock value of a specified stock. With this Web Part, you can for example share the current stock price of your company on your homepage. This Web Part uses the Yahoo! Financial Services."
+      },
+      "officeFabricIconFontName": "Financial",
+      "properties": {
+        "stock": "MSFT",
+        "lang": "en-US",
+        "region": "US",
+        "dimension": {
+          "width": "250px",
+          "height": "250px"
+        }
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "stockInfo.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "stockInfo.bundle": {
+        "type": "path",
+        "path": "dist/stockInfo.bundle.js"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "StockInfoStrings": {
+        "defaultPath": "lib/webparts/stockInfo/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

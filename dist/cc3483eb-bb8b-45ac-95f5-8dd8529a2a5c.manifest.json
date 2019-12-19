@@ -1,0 +1,124 @@
+{
+  "id": "cc3483eb-bb8b-45ac-95f5-8dd8529a2a5c",
+  "alias": "PolarChart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "7a7091d9-d176-450b-a04f-9fa48ca1981b",
+      "group": {
+        "default": "Charts, Graphs and Maps"
+      },
+      "title": {
+        "default": "Polar Chart"
+      },
+      "description": {
+        "default": "A web part to insert a polar chart, modify the data and the render. Very easy & quick to use in a SharePoint page."
+      },
+      "officeFabricIconFontName": "MarketDown",
+      "properties": {
+        "responsive": false,
+        "dimension": {
+          "width": "450px",
+          "height": "450px"
+        },
+        "animateRotate": true,
+        "animateScale": false,
+        "position": "top",
+        "title": "Colors Polar Chart",
+        "titleEnable": true,
+        "titleColor": "#666",
+        "titleSize": "12px",
+        "legendEnable": true,
+        "legendPosition": "top",
+        "legendColor": "#666",
+        "legendSize": "12px",
+        "items": [
+          {
+            "Label": "Red",
+            "Value": 11,
+            "Color": "#FF6384",
+            "Hover Color": "#FF6384"
+          },
+          {
+            "Label": "Green",
+            "Value": 16,
+            "Color": "#4BC0C0",
+            "Hover Color": "#4BC0C0"
+          },
+          {
+            "Label": "Yellow",
+            "Value": 7,
+            "Color": "#FFCE56",
+            "Hover Color": "#FFCE56"
+          },
+          {
+            "Label": "Grey",
+            "Value": 3,
+            "Color": "#E7E9ED",
+            "Hover Color": "#E7E9ED"
+          },
+          {
+            "Label": "Blue",
+            "Value": 14,
+            "Color": "#36A2EB",
+            "Hover Color": "#36A2EB"
+          }
+        ]
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "polarChart.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "polarChart.bundle": {
+        "type": "path",
+        "path": "dist/polarChart.bundle.js"
+      },
+      "chartjs": {
+        "type": "path",
+        "path": "src/javascripts/chartjs/Chart.min.js",
+        "globalName": "Chart"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "PolarChartStrings": {
+        "defaultPath": "lib/webparts/polarChart/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./StockInfo.module.css');
 const styles = {
-  carousel3D: 'carousel3D_3db71dde',
-  container: 'container_3db71dde',
-  row: 'row_3db71dde',
-  listItem: 'listItem_3db71dde',
-  button: 'button_3db71dde',
+  carousel3D: 'carousel3D_e1e7765c',
+  container: 'container_e1e7765c',
+  row: 'row_e1e7765c',
+  listItem: 'listItem_e1e7765c',
+  button: 'button_e1e7765c',
 };
 
 export default styles;

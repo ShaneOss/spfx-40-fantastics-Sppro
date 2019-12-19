@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./Carousel3D.module.css');
 const styles = {
-  carousel3D: 'carousel3D_da8d94a9',
-  container: 'container_da8d94a9',
-  row: 'row_da8d94a9',
-  listItem: 'listItem_da8d94a9',
-  button: 'button_da8d94a9',
+  carousel3D: 'carousel3D_55ffe3eb',
+  container: 'container_55ffe3eb',
+  row: 'row_55ffe3eb',
+  listItem: 'listItem_55ffe3eb',
+  button: 'button_55ffe3eb',
 };
 
 export default styles;

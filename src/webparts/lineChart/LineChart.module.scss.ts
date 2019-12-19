@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./LineChart.module.css');
 const styles = {
-  carousel3D: 'carousel3D_98a79037',
-  container: 'container_98a79037',
-  row: 'row_98a79037',
-  listItem: 'listItem_98a79037',
-  button: 'button_98a79037',
+  carousel3D: 'carousel3D_85b28495',
+  container: 'container_85b28495',
+  row: 'row_85b28495',
+  listItem: 'listItem_85b28495',
+  button: 'button_85b28495',
 };
 
 export default styles;

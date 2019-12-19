@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./Markdown.module.css');
 const styles = {
-  carousel3D: 'carousel3D_7c406f61',
-  container: 'container_7c406f61',
-  row: 'row_7c406f61',
-  listItem: 'listItem_7c406f61',
-  button: 'button_7c406f61',
+  carousel3D: 'carousel3D_c862470e',
+  container: 'container_c862470e',
+  row: 'row_c862470e',
+  listItem: 'listItem_c862470e',
+  button: 'button_c862470e',
 };
 
 export default styles;

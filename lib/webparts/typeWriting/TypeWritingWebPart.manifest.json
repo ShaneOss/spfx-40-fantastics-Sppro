@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "1431cddd-2c55-475c-5483-51aa74c7bc88",
+  "alias": "TypeWriting",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "4a6dc2e5-7bd2-4ab7-a830-8107d2b7ee5a",
+    "group": { "default": "Text Tools" },
+    "title": { "default": "Type Writing" },
+    "description": { "default": "Insert a text with a typwriter effect. It will simulate a mechanical or electromechanical machine for writing in characters similar to those produced by printer." },
+    "officeFabricIconFontName": "Underline",
+    "properties": {
+      "text": "Lipsum",
+      "splitLines": true,
+      "font":  "",
+      "fontSize":  "normal",
+      "fontColor":  "#000000",
+      "backgroundColor":  "#FFFFFF",
+      "typingInterval":  130,
+      "blinkInterval":  1000,
+      "cursorColor":  "#00fd55"
+    }
+  }]
+}

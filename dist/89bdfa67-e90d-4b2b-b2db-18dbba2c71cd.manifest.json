@@ -1,0 +1,85 @@
+{
+  "id": "89bdfa67-e90d-4b2b-b2db-18dbba2c71cd",
+  "alias": "QRCode",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "1df557f4-e29a-4d2d-b1bf-a6b0b68aae90",
+      "group": {
+        "default": "Tools"
+      },
+      "title": {
+        "default": "QR Code"
+      },
+      "description": {
+        "default": "Insert a QR Code in your SharePoint pages and modify the associated text, size, etc. A QRCode is very handy for example to allow your users to access simply and quickly to a page on your Intranet from a smartphone."
+      },
+      "officeFabricIconFontName": "Camera",
+      "properties": {
+        "text": "https://contoso.sharepoint.com",
+        "dimension": {
+          "width": "250px",
+          "height": "250px"
+        },
+        "mode": "canvas"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "qrCode.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "qrCode.bundle": {
+        "type": "path",
+        "path": "dist/qrCode.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "qrcode": {
+        "type": "path",
+        "path": "src/javascripts/qrcode/jquery.qrcode.min.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "QrCodeStrings": {
+        "defaultPath": "lib/webparts/qrCode/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

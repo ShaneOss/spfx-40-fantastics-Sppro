@@ -1,0 +1,32 @@
+define([], function() {
+  return {
+    "PropertyPageGeneral": "Customize the general settings",
+    "PropertyPageTextPanel": "Customize the Text Panel settings",
+    "PropertyPageBorder": "Customize the Tiles border settings",
+    "BasicGroupName": "Data",
+    "GeneralGroupName": "General",
+    "BorderGroupName": "Border",
+    "EnableIconsFieldLabel": "Enable icons",
+    "TextPanelGroupName": "Text Panel",
+    "TextPanelEnableFieldLabel": "Enable textpanel",
+    "TextPanelAlwaysOnTopFieldLabel": "Always on top",
+    "TextPanelOpacityFieldLabel": "Opacity",
+    "TextPanelFontFieldLabel": "Font",
+    "TextPanelFontSizeFieldLabel": "Font Size",
+    "TextPanelBackgroundColorFieldLabel": "Background Color",
+    "TextPanelAlignFieldLabel": "Text align",
+    "TextPanelFontColorFieldLabel": "Font Color",
+    "EnableBorderFieldLabel": "Enable border",
+    "BorderColorFieldLabel": "Border color",
+    "BorderFieldLabel": "Border size",
+    "ErrorSelectList": "Please edit the webpart and add some news items.",
+    "EffectsGroupName": "Effects",
+    "EnableArrows": "Enable Arrows",
+    "PauseOnMouseover": "Pause On Mouseover",
+    "Autoplay": "Autoplay",
+    "Speed": "Speed (ms)",
+    "TileDimension": "Tile Size",
+    "Items": "News Items",
+    "ManageItems": "Manage News Items"
+  }
+});

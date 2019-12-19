@@ -1,0 +1,89 @@
+{
+  "id": "438e1c92-f33f-4952-aa36-add7530b6937",
+  "alias": "SocialPhotoStream",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "8be34b8b-4fe8-4adb-b4b6-cc88a51f8646",
+      "group": {
+        "default": "Social Tools"
+      },
+      "title": {
+        "default": "Social Photo Stream"
+      },
+      "description": {
+        "default": "A web part to insert a list of photo from populars photos sharing plateforms as Instagram, Pinterest, Flickr, Deviantart, Dribbble, Picasa, Youtube & Newsfeed."
+      },
+      "officeFabricIconFontName": "Photo2",
+      "properties": {
+        "network": "pinterest",
+        "userName": "microsoft",
+        "accessKey": "",
+        "limit": 20,
+        "overlay": true,
+        "dimension": {
+          "width": "100px",
+          "height": "100px"
+        },
+        "spacing": 5
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "socialPhotoStream.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "socialPhotoStream.bundle": {
+        "type": "path",
+        "path": "dist/socialPhotoStream.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "socialStream": {
+        "type": "path",
+        "path": "src/javascripts/socialStream/socialstream.jquery.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "SocialPhotoStreamStrings": {
+        "defaultPath": "lib/webparts/socialPhotoStream/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

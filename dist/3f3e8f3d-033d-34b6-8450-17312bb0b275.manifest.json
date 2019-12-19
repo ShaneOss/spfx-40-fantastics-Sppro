@@ -1,0 +1,109 @@
+{
+  "id": "3f3e8f3d-033d-34b6-8450-17312bb0b275",
+  "alias": "SliderGallery",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "a509fe47-209d-48b7-b27a-6f3841c4033a",
+      "group": {
+        "default": "Images Galleries and Tools"
+      },
+      "title": {
+        "default": "Slider Gallery"
+      },
+      "description": {
+        "default": "This Web Part allows you to view your photo galleries in the form of a slider between the images. Photos automatically scroll with the effect of your choice. The user can click on the arrows or use the touch features to navigate through the images. On click, the image is opened in full screen."
+      },
+      "officeFabricIconFontName": "Play",
+      "properties": {
+        "enableArrows": true,
+        "enableBullets": true,
+        "enablePlayButton": false,
+        "enableFullscreenButton": false,
+        "enableZoomPanel": false,
+        "controlsAlwaysOn": false,
+        "preserveRatio": true,
+        "pauseOnMouseover": true,
+        "carousel": true,
+        "autoplay": true,
+        "speed": 4000,
+        "transition": "slide",
+        "enableProgressIndicator": true,
+        "textPanelEnable": true,
+        "textPanelAlwaysOnTop": true,
+        "textPanelOpacity": 0.4
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "slider-gallery.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "slider-gallery.bundle": {
+        "type": "path",
+        "path": "dist/slider-gallery.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "unitegallery": {
+        "type": "path",
+        "path": "src/javascripts/unitegallery/unitegallery.min.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "ug-theme-slider": {
+        "type": "path",
+        "path": "src/javascripts/unitegallery/ug-theme-slider.js",
+        "globalDependencies": [
+          "jquery",
+          "unitegallery"
+        ],
+        "globalName": "jQuery"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "sliderGalleryStrings": {
+        "defaultPath": "lib/webparts/sliderGallery/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

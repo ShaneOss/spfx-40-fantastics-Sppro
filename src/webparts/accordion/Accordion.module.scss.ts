@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./Accordion.module.css');
 const styles = {
-  accordion: 'accordion_e83bc175',
-  container: 'container_e83bc175',
-  row: 'row_e83bc175',
-  listItem: 'listItem_e83bc175',
-  button: 'button_e83bc175',
+  accordion: 'accordion_243c8c14',
+  container: 'container_243c8c14',
+  row: 'row_243c8c14',
+  listItem: 'listItem_243c8c14',
+  button: 'button_243c8c14',
 };
 
 export default styles;

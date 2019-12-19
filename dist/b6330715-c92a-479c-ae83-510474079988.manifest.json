@@ -1,0 +1,150 @@
+{
+  "id": "b6330715-c92a-479c-ae83-510474079988",
+  "alias": "3DCarousel",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "72505c62-b3c0-4cc3-89d8-f2adc8d962a0",
+      "group": {
+        "default": "News Management"
+      },
+      "title": {
+        "default": "3D Carousel"
+      },
+      "description": {
+        "default": "Insert a 3D Carousel in your SharePoint pages. With this Web Part, you can manage your menu items and create automatically a 3D carousel."
+      },
+      "officeFabricIconFontName": "Sync",
+      "properties": {
+        "speed": 6,
+        "showButton": true,
+        "showTitle": true,
+        "autoPlay": true,
+        "autoPlayDelay": 2000,
+        "bringToFront": true,
+        "mirrorGap": 2,
+        "mirrorHeight": 0.2,
+        "mirrorOpacity": 0.4,
+        "yOrigin": 43,
+        "yRadius": 86,
+        "xOrigin": 383,
+        "xRadius": 320,
+        "height": 400,
+        "font": "\"Segoe UI\",Frutiger,\"Frutiger Linotype\",\"Dejavu Sans\",\"Helvetica Neue\",Arial,sans-serif",
+        "fontSize": "28px",
+        "fontColor": "#000000",
+        "itemHeight": 180,
+        "items": [
+          {
+            "Title": "Skype",
+            "Enabled": "true",
+            "Link Text": "Download",
+            "Link Url": "https://www.skype.com/en/business/skype-for-business/",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/skype.png"
+          },
+          {
+            "Title": "OneNote",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/onenote.png"
+          },
+          {
+            "Title": "Delve",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/delve.png"
+          },
+          {
+            "Title": "Office Video",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/o365video.png"
+          },
+          {
+            "Title": "Word",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/word.png"
+          },
+          {
+            "Title": "Excel",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/excel.png"
+          },
+          {
+            "Title": "PowerPoint",
+            "Enabled": "true",
+            "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/logos/powerpoint.png"
+          }
+        ]
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "carousel-3-d.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "carousel-3-d.bundle": {
+        "type": "path",
+        "path": "dist/carousel-3-d.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "cloud9carousel": {
+        "type": "path",
+        "path": "src/javascripts/cloud9carousel/jquery.cloud9carousel.js",
+        "globalDependencies": [
+          "jquery",
+          "jqueryreflection"
+        ],
+        "globalName": "jQuery"
+      },
+      "jqueryreflection": {
+        "type": "path",
+        "path": "src/javascripts/reflection/jquery.reflection.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "sp-client-custom-fields/strings": {
+        "defaultPath": "node_modules/sp-client-custom-fields/lib/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "carousel3DStrings": {
+        "defaultPath": "lib/webparts/carousel3D/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

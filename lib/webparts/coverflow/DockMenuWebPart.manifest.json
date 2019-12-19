@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "b63ccc15-cc2a-479c-ae83-510474c79c88",
+  "alias": "coverflow",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "72505c62-b3c0-4cc3-89d8-f2adc8d962a0",
+    "group": { "default": "News Management" },
+    "title": { "default": "Coverflow" },
+    "description": { "default": "Generates a Coverflow Apple like menu in your pages. Manage your menu items with title and picture and create a cool coverflow menu." },
+    "officeFabricIconFontName": "Sections",
+    "properties": {
+      "duration": "normal",
+      "easing": "swing",
+      "density": 2,
+      "innerOffset": 50,
+      "innerScale": 0.7,
+      "shadow": true,
+      "textPanelEnable": true,
+      "textPanelAlign": "left",
+      "textPanelFontSize": "16px",
+      "textPanelFont": "\"Segoe UI\",Frutiger,\"Frutiger Linotype\",\"Dejavu Sans\",\"Helvetica Neue\",Arial,sans-serif",
+      "textPanelFontColor": "#ffffff",
+      "textPanelBackgroundColor": "rgba(0,0,0,0.6)",
+      "items": [
+        {"Title": "Attic", "Enabled": "true",
+          "Link Text": "View", "Link Url": "images/coverflow/attic.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/attic.jpg"},
+        {"Title": "Aurora", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/aurora.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/aurora.jpg"},
+        {"Title": "Barbecue", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/barbecue.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/barbecue.jpg"},
+        {"Title": "Black Swan", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/blackswan.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/blackswan.jpg"},
+        {"Title": "Chess", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/chess.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/chess.jpg"},
+        {"Title": "Fire", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/fire.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/fire.jpg"},
+        {"Title": "Keyboard", "Enabled": "true",
+          "Link Text": "View", "Link Url": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/keyboard.jpg",
+          "Picture": "https://spfx40fantastics.azureedge.net/spfx40fantastics/images/coverflow/keyboard.jpg"}
+      ]
+    }
+  }]
+}

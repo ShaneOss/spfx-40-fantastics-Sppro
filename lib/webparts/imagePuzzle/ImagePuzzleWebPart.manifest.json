@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "65c7a7f0-6875-4731-8956-2a8d423edc1d",
+  "alias": "ImagePuzzle",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "a509fe47-209d-48b7-b27a-6f3841c4033a",
+    "group": { "default": "Images Galleries and Tools" },
+    "title": { "default": "Image Puzzle" },
+    "description": { "default": "From an image of your SharePoint site, this Web Part will generate a puzzle effect. The image will be automatically cut into pieces, and the pieces are going to move next to the other before returning to the normal state of the image. Nice to add style to your page." },
+    "officeFabricIconFontName": "Puzzle",
+    "properties": {
+      "image": "",
+      "alt": "",
+      "linkText": "",
+      "linkUrl": "",
+      "dimension": {
+        "width": "100%",
+        "height": "100%"
+      },
+      "frequence": 2000,
+      "columns": 4,
+      "rows" : 4,
+      "margin": 2,
+      "distinct": false
+    }
+  }]
+}

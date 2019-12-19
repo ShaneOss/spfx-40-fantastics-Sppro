@@ -1,0 +1,99 @@
+{
+  "id": "44a6136a-dcc5-45dd-95a6-747430624042",
+  "alias": "Photopile",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "a509fe47-209d-48b7-b27a-6f3841c4033a",
+      "group": {
+        "default": "Images Galleries and Tools"
+      },
+      "title": {
+        "default": "Photopile"
+      },
+      "description": {
+        "default": "From a SharePoint library, this Web Part generates a stack of photos on a table effect. This gives an aspect of photo gallery of Polaroid, for example. Click on the photos to enlarge to full screen."
+      },
+      "officeFabricIconFontName": "StackIndicator",
+      "properties": {
+        "listName": "",
+        "orderBy": "ID",
+        "orderByAsc": "asc",
+        "count": 100,
+        "numLayers": 5,
+        "thumbOverlap": 50,
+        "thumbRotation": 45,
+        "thumbBorderWidth": 2,
+        "thumbBorderColor": "white",
+        "thumbBorderHover": "#EAEAEA",
+        "draggable": true,
+        "fadeDuration": 200,
+        "pickupDuration": 500,
+        "photoZIndex": 100,
+        "photoBorder": 10,
+        "photoBorderColor": "white",
+        "showInfo": true,
+        "autoplayGallery": false,
+        "autoplaySpeed": 5000
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "photopile.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "photopile.bundle": {
+        "type": "path",
+        "path": "dist/photopile.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "jqueryui": {
+        "type": "path",
+        "path": "node_modules/jqueryui/jquery-ui.js"
+      },
+      "photopileModule": {
+        "type": "path",
+        "path": "src/javascripts/photopile/photopile.js"
+      },
+      "mystrings": {
+        "defaultPath": "lib/webparts/photopile/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

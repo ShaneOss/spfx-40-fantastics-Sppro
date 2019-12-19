@@ -1,0 +1,96 @@
+{
+  "id": "d13752b9-1a71-45ca-96fe-918f0c9631cb",
+  "alias": "RSSReader",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "8be34b8b-4fe8-4adb-b4b6-cc88a51f8646",
+      "group": {
+        "default": "Social Tools"
+      },
+      "title": {
+        "default": "RSS Reader"
+      },
+      "description": {
+        "default": "A web part to insert a full client side RSS/Atom Feed in your SharePoint pages. You can easily integrated a topical or competitive intelligence stream into your pages to your favorite RSS feeds."
+      },
+      "officeFabricIconFontName": "InternetSharing",
+      "properties": {
+        "feedUrl": "https://blogs.office.com/feed/",
+        "maxCount": 10,
+        "showDesc": true,
+        "showPubDate": true,
+        "descCharacterLimit": 100,
+        "titleLinkTarget": "_blank",
+        "dateFormat": "MM/DD/YYYY",
+        "dateFormatLang": "en",
+        "backgroundColor": "#ffffff",
+        "font": "",
+        "fontSize": "16px",
+        "fontColor": "#4EBAFF"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "rssReader.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "rssReader.bundle": {
+        "type": "path",
+        "path": "dist/rssReader.bundle.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "feedek": {
+        "type": "path",
+        "path": "src/javascripts/rssReader/FeedEk.min.js",
+        "globalDependencies": [
+          "jquery",
+          "moment"
+        ],
+        "globalName": "jQuery"
+      },
+      "moment": {
+        "type": "path",
+        "path": "src/javascripts/rssReader/moment.min.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jQuery"
+      },
+      "RssReaderStrings": {
+        "defaultPath": "lib/webparts/rssReader/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "react": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "failoverPath": "node_modules/react/dist/react.js"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "react-dom": {
+        "type": "component",
+        "version": "15.4.2",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

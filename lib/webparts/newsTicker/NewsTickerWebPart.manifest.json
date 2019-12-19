@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "60564c9b-8561-489d-9ff7-1846c8358964",
+  "alias": "NewsTicker",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "72505c62-b3c0-4cc3-89d8-f2adc8d962a0",
+    "group": { "default": "News Management" },
+    "title": { "default": "News Ticker" },
+    "description": { "default": "Insert a simple horizontal News Ticker to display news as a simple ribbon. This web part is usefull if you want to display Breaking News BBC like information in your site" },
+    "officeFabricIconFontName": "NumberedList",
+    "properties": {
+      "title": "Latest News",
+      "width": "100%",
+      "height": "30px",
+      "backgroundColor": "#347fd0",
+      "font": "Helvetica",
+      "fontSize": "16px",
+      "fontColor": "#e7f251",
+      "fontMssg": "Helvetica",
+      "fontSizeMssg": "16px",
+      "fontColorMssg": "#ffffff",
+      "speed": "10",
+      "borderRadius": 4,
+      "pausedMouseHover": true,
+      "items": [
+        {
+          "Title": "Discover the new work station",
+          "Enable": "true",
+          "Link Url": "#"
+        },
+        {
+          "Title": "All the Intranet in your Smart Phone",
+          "Enable": "true",
+          "Link Url": "#"
+        },
+        {
+          "Title": "Take a break!",
+          "Enable": "true",
+          "Link Url": "#"
+        },
+        {
+          "Title": "Discover the new meeting areas",
+          "Enable": "true",
+          "Link Url": "#"
+        },
+        {
+          "Title": "New travel policies",
+          "Enable": "true",
+          "Link Url": "#"
+        },
+        {
+          "Title": "New commons",
+          "Enable": "false",
+          "Link Url": "#"
+        }
+      ]
+    }
+  }]
+}

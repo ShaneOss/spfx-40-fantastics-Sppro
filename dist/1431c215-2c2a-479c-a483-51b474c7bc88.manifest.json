@@ -1,0 +1,65 @@
+{
+  "id": "1431c215-2c2a-479c-a483-51b474c7bc88",
+  "alias": "Markdown",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "4a6dc2e5-7bd2-4ab7-a830-8107d2b7ee5a",
+      "group": {
+        "default": "Text Tools"
+      },
+      "title": {
+        "default": "Markdown"
+      },
+      "description": {
+        "default": "If you like the Markdown (MD) syntax, this Web Part is made for you! With this Web Part, you can add a player of Markdown in your page and edit its content through a specialized Editor. It has never been as easy to use the power of Markdown in SharePoint."
+      },
+      "officeFabricIconFontName": "Header1",
+      "properties": {
+        "text": "",
+        "toolbar": true,
+        "toolbarTips": true,
+        "status": true,
+        "spellChecker": false
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "markdown.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "markdown.bundle": {
+        "type": "path",
+        "path": "dist/markdown.bundle.js"
+      },
+      "showdown": {
+        "type": "path",
+        "path": "src/javascripts/showdown/showdown.min.js",
+        "globalName": "showdown"
+      },
+      "simplemde": {
+        "type": "path",
+        "path": "src/javascripts/simplemde/simplemde.min.js",
+        "globalName": "SimpleMDE"
+      },
+      "MarkdownStrings": {
+        "defaultPath": "lib/webparts/markdown/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

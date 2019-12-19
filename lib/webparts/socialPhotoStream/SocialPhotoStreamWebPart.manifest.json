@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "438e1c92-f33f-4952-aa36-add7530b6937",
+  "alias": "SocialPhotoStream",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "8be34b8b-4fe8-4adb-b4b6-cc88a51f8646",
+    "group": { "default": "Social Tools" },
+    "title": { "default": "Social Photo Stream" },
+    "description": { "default": "A web part to insert a list of photo from populars photos sharing plateforms as Instagram, Pinterest, Flickr, Deviantart, Dribbble, Picasa, Youtube & Newsfeed." },
+    "officeFabricIconFontName": "Photo2",
+    "properties": {
+      "network": "pinterest",
+      "userName": "microsoft",
+      "accessKey": "",
+      "limit": 20,
+      "overlay": true,
+      "dimension": {
+        "width": "100px",
+        "height": "100px"
+      },
+      "spacing": 5
+    }
+  }]
+}

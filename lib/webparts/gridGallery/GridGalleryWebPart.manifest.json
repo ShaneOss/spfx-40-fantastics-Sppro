@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "3f3e8f3d-033d-34b6-8450-1731c427c275",
+  "alias": "GridGallery",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "a509fe47-209d-48b7-b27a-6f3841c4033a",
+    "group": { "default": "Images Galleries and Tools" },
+    "title": { "default": "Grid Gallery" },
+    "description": { "default": "From any library of images of your SharePoint site, you can generate an image gallery with thumbnails that scroll automatically. You can click on an image to enlarge. This Web Pat is responsive." },
+    "officeFabricIconFontName": "PictureLibrary",
+    "properties": {
+      "enableArrows": true,
+      "enableBullets": false,
+      "enablePlayButton": true,
+      "enableFullscreenButton": true,
+      "enableZoomPanel": true,
+      "controlsAlwaysOn": false,
+      "preserveRatio": true,
+      "pauseOnMouseover": true,
+      "enableBorder": false,
+      "borderColor": "#CCCCCC",
+      "border": 0,
+      "tileDimension": {
+        "width": "88px",
+        "height": "50px"
+      },
+      "autoplay": true,
+      "speed": 4000,
+      "textPanelEnable": true,
+      "textPanelAlwaysOnTop": false,
+      "enableProgressIndicator": false,
+      "textPanelOpacity": 0.4,
+      "position": "bottom",
+      "numCols": 2
+    }
+  }]
+}

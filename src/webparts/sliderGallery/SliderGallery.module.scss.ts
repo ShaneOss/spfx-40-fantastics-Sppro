@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./SliderGallery.module.css');
 const styles = {
-  tilesGallery: 'tilesGallery_5785798d',
-  container: 'container_5785798d',
-  row: 'row_5785798d',
-  listItem: 'listItem_5785798d',
-  button: 'button_5785798d',
+  tilesGallery: 'tilesGallery_f2717277',
+  container: 'container_f2717277',
+  row: 'row_f2717277',
+  listItem: 'listItem_f2717277',
+  button: 'button_f2717277',
 };
 
 export default styles;

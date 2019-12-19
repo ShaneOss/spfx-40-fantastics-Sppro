@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./FckText.module.css');
 const styles = {
-  carousel3D: 'carousel3D_f839884a',
-  container: 'container_f839884a',
-  row: 'row_f839884a',
-  listItem: 'listItem_f839884a',
-  button: 'button_f839884a',
+  carousel3D: 'carousel3D_6ac4202b',
+  container: 'container_6ac4202b',
+  row: 'row_6ac4202b',
+  listItem: 'listItem_6ac4202b',
+  button: 'button_6ac4202b',
 };
 
 export default styles;

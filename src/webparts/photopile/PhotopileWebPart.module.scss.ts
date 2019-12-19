@@ -1,9 +1,9 @@
 /* tslint:disable */
 require('./PhotopileWebPart.module.css');
 const styles = {
-  photopileWebPart: 'photopileWebPart_74d620d2',
-  workingOnItSpinner: 'workingOnItSpinner_74d620d2',
-  loadingLabel: 'loadingLabel_74d620d2',
+  photopileWebPart: 'photopileWebPart_44c595f2',
+  workingOnItSpinner: 'workingOnItSpinner_44c595f2',
+  loadingLabel: 'loadingLabel_44c595f2',
 };
 
 export default styles;

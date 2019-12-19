@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./MediaPlayer.module.css');
 const styles = {
-  carousel3D: 'carousel3D_58698fe6',
-  container: 'container_58698fe6',
-  row: 'row_58698fe6',
-  listItem: 'listItem_58698fe6',
-  button: 'button_58698fe6',
+  carousel3D: 'carousel3D_11dc65ad',
+  container: 'container_11dc65ad',
+  row: 'row_11dc65ad',
+  listItem: 'listItem_11dc65ad',
+  button: 'button_11dc65ad',
 };
 
 export default styles;

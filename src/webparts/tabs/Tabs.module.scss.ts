@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./Tabs.module.css');
 const styles = {
-  carousel3D: 'carousel3D_e367b7c9',
-  container: 'container_e367b7c9',
-  row: 'row_e367b7c9',
-  listItem: 'listItem_e367b7c9',
-  button: 'button_e367b7c9',
+  carousel3D: 'carousel3D_aa99740e',
+  container: 'container_aa99740e',
+  row: 'row_aa99740e',
+  listItem: 'listItem_aa99740e',
+  button: 'button_aa99740e',
 };
 
 export default styles;

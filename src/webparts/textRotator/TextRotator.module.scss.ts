@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./TextRotator.module.css');
 const styles = {
-  carousel3D: 'carousel3D_a8463920',
-  container: 'container_a8463920',
-  row: 'row_a8463920',
-  listItem: 'listItem_a8463920',
-  button: 'button_a8463920',
+  carousel3D: 'carousel3D_2e35ca16',
+  container: 'container_2e35ca16',
+  row: 'row_2e35ca16',
+  listItem: 'listItem_2e35ca16',
+  button: 'button_2e35ca16',
 };
 
 export default styles;

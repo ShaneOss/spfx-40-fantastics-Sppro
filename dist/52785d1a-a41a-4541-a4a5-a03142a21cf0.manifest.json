@@ -1,0 +1,245 @@
+{
+  "id": "52785d1a-a41a-4541-a4a5-a03142a21cf0",
+  "alias": "SyntaxHighlighter",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "groupId": "4a6dc2e5-7bd2-4ab7-a830-8107d2b7ee5a",
+      "group": {
+        "default": "Text Tools"
+      },
+      "title": {
+        "default": "Syntax Highlighter"
+      },
+      "description": {
+        "default": "With this Web Part, you can copy and paste the code in a page and automatically benefit from a syntax highlighter to read the code. This Web Part supports many languages as ActionScript3, Bash/shell, ColdFusion, c#, C++, CSS, Delphi, Diff, Erlang, Groovy, JavaScript, Java, JavaFX, Perl, PHP, Plain Text, PowerShell, Python, Ruby, Scala, SQL, Visual Basic and XML."
+      },
+      "officeFabricIconFontName": "Code",
+      "properties": {
+        "code": "function hello(){\n  console.writeLine('hello !');\n}",
+        "language": "js",
+        "toolbar": true,
+        "gutter": true,
+        "autoLinks": true,
+        "smartTabs": true
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "syntaxHighlighter.bundle",
+    "internalModuleBaseUrls": [
+      "http://localhost:8080/"
+    ],
+    "scriptResources": {
+      "syntaxHighlighter.bundle": {
+        "type": "path",
+        "path": "dist/syntaxHighlighter.bundle.js"
+      },
+      "shBrushAS3": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushAS3.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushBash": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushBash.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushCSharp": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushCSharp.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushColdFusion": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushColdFusion.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushCpp": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushCpp.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushCss": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushCss.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushDelphi": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushDelphi.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushDiff": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushDiff.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushErlang": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushErlang.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushGroovy": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushGroovy.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushJScript": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushJScript.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushJava": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushJava.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushJavaFX": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushJavaFX.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushPerl": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushPerl.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushPhp": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushPhp.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushPlain": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushPlain.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushPowerShell": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushPowerShell.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushPython": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushPython.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushRuby": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushRuby.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushScala": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushScala.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushSql": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushSql.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushVb": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushVb.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "shBrushXml": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shBrushXml.min.js",
+        "globalDependencies": [
+          "syntaxHighlighter"
+        ],
+        "globalName": "SyntaxHighlighter"
+      },
+      "syntaxHighlighter": {
+        "type": "path",
+        "path": "src/javascripts/syntaxHighlighter/shCore.min.js",
+        "globalName": "SyntaxHighlighter"
+      },
+      "SyntaxHighlighterStrings": {
+        "defaultPath": "lib/webparts/syntaxHighlighter/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.1.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.1.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}
