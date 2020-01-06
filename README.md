@@ -1,5 +1,5 @@
 # SPFx Fantastic 40 Web Parts
-*important* currently its only working with > node 12.. I use node 11.15.0 using NVM to switch between node version.. Hoping to fix this issue in the future. 
+*Important:* currently its only working with > node 12.. I use node 11.15.0 using NVM to switch between node version.. Hoping to fix this issue in the future. 
 
 I've forked this project to try and keep it active. 
 
