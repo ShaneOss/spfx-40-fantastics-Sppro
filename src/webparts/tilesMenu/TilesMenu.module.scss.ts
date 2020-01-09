@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./TilesMenu.module.css');
 const styles = {
-  TilesMenu: 'TilesMenu_6265e34e',
-  container: 'container_6265e34e',
-  row: 'row_6265e34e',
-  listItem: 'listItem_6265e34e',
-  button: 'button_6265e34e',
+  TilesMenu: 'TilesMenu_50bbe52a',
+  container: 'container_50bbe52a',
+  row: 'row_50bbe52a',
+  listItem: 'listItem_50bbe52a',
+  button: 'button_50bbe52a',
 };
 
 export default styles;

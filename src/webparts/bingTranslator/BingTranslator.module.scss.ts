@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./BingTranslator.module.css');
 const styles = {
-  carousel3D: 'carousel3D_026ff0b0',
-  container: 'container_026ff0b0',
-  row: 'row_026ff0b0',
-  listItem: 'listItem_026ff0b0',
-  button: 'button_026ff0b0',
+  carousel3D: 'carousel3D_bcfaa275',
+  container: 'container_bcfaa275',
+  row: 'row_bcfaa275',
+  listItem: 'listItem_bcfaa275',
+  button: 'button_bcfaa275',
 };
 
 export default styles;

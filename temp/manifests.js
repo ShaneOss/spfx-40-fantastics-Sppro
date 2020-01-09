@@ -1930,7 +1930,7 @@ function getManifests() {
     "loaderConfig": {
       "entryModuleId": "sp-webpart-base",
       "internalModuleBaseUrls": [
-        "http://localhost:8080/node_modules/@microsoft/sp-webpart-base/"
+        "http://localhost:8080/node_modules/@microsoft/sp-webpart-workbench/node_modules/@microsoft/sp-webpart-base/"
       ],
       "scriptResources": {
         "sp-webpart-base": {

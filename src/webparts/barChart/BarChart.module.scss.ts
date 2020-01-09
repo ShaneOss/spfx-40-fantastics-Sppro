@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./BarChart.module.css');
 const styles = {
-  carousel3D: 'carousel3D_28ffa5c6',
-  container: 'container_28ffa5c6',
-  row: 'row_28ffa5c6',
-  listItem: 'listItem_28ffa5c6',
-  button: 'button_28ffa5c6',
+  carousel3D: 'carousel3D_981027af',
+  container: 'container_981027af',
+  row: 'row_981027af',
+  listItem: 'listItem_981027af',
+  button: 'button_981027af',
 };
 
 export default styles;

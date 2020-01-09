@@ -8,6 +8,7 @@
 import { BaseClientSideWebPart, IPropertyPaneConfiguration, IWebPartContext } from '@microsoft/sp-webpart-base';
 import { Version } from '@microsoft/sp-core-library';
 import { ITilesMenuWebPartProps } from './ITilesMenuWebPartProps';
+import '../../css/polyfill.css';
 export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWebPartProps> {
     private guid;
     /**

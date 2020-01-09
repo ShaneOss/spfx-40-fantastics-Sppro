@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./SocialShare.module.css');
 const styles = {
-  carousel3D: 'carousel3D_54f25bb9',
-  container: 'container_54f25bb9',
-  row: 'row_54f25bb9',
-  listItem: 'listItem_54f25bb9',
-  button: 'button_54f25bb9',
+  carousel3D: 'carousel3D_360e34e2',
+  container: 'container_360e34e2',
+  row: 'row_360e34e2',
+  listItem: 'listItem_360e34e2',
+  button: 'button_360e34e2',
 };
 
 export default styles;

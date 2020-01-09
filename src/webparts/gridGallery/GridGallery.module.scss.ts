@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./GridGallery.module.css');
 const styles = {
-  tilesGallery: 'tilesGallery_7c765bcf',
-  container: 'container_7c765bcf',
-  row: 'row_7c765bcf',
-  listItem: 'listItem_7c765bcf',
-  button: 'button_7c765bcf',
+  tilesGallery: 'tilesGallery_51dc93e8',
+  container: 'container_51dc93e8',
+  row: 'row_51dc93e8',
+  listItem: 'listItem_51dc93e8',
+  button: 'button_51dc93e8',
 };
 
 export default styles;

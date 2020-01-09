@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./ImageColor.module.css');
 const styles = {
-  carousel3D: 'carousel3D_9e0fa90b',
-  container: 'container_9e0fa90b',
-  row: 'row_9e0fa90b',
-  listItem: 'listItem_9e0fa90b',
-  button: 'button_9e0fa90b',
+  carousel3D: 'carousel3D_36ad6ee7',
+  container: 'container_36ad6ee7',
+  row: 'row_36ad6ee7',
+  listItem: 'listItem_36ad6ee7',
+  button: 'button_36ad6ee7',
 };
 
 export default styles;

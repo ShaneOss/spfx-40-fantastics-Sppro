@@ -1,8 +1,8 @@
 /* tslint:disable */
 require('./ArcText.module.css');
 const styles = {
-  arcText: 'arcText_1e12244b',
-  container: 'container_1e12244b',
+  arcText: 'arcText_887c2167',
+  container: 'container_887c2167',
 };
 
 export default styles;

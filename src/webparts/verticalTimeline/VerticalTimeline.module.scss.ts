@@ -1,11 +1,11 @@
 /* tslint:disable */
 require('./VerticalTimeline.module.css');
 const styles = {
-  carousel3D: 'carousel3D_93690cd8',
-  container: 'container_93690cd8',
-  row: 'row_93690cd8',
-  listItem: 'listItem_93690cd8',
-  button: 'button_93690cd8',
+  carousel3D: 'carousel3D_a2cf419c',
+  container: 'container_a2cf419c',
+  row: 'row_a2cf419c',
+  listItem: 'listItem_a2cf419c',
+  button: 'button_a2cf419c',
 };
 
 export default styles;

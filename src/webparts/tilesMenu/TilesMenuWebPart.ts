@@ -25,6 +25,7 @@ import { PropertyFieldFontPicker } from 'sp-client-custom-fields/lib/PropertyFie
 import { PropertyFieldFontSizePicker } from 'sp-client-custom-fields/lib/PropertyFieldFontSizePicker';
 import { PropertyFieldAlignPicker } from 'sp-client-custom-fields/lib/PropertyFieldAlignPicker';
 import { PropertyFieldCustomList, CustomListFieldType } from 'sp-client-custom-fields/lib/PropertyFieldCustomList';
+import '../../css/polyfill.css';
 
 //Loads external JS libs
 require('jquery');
@@ -111,7 +112,6 @@ export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWe
   }
 
   private renderContents(): void {
-      console.log("this.properties", this.properties);
       ($ as any)("#" + this.guid + "-gallery").unitegallery({
         tile_as_link: true,
         tiles_type: this.properties.justified === true ? "justified": '',
@@ -344,7 +344,7 @@ export default class TilesMenuWebPart extends BaseClientSideWebPart<ITilesMenuWe
               groupFields: [
                 PropertyPaneTextField('tilesJustifiedRowHeight', {
                   label: strings.TilesJustifiedRowHeight,
-                })            
+                })
               ]
             }
           ]
