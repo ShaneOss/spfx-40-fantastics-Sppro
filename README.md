@@ -1,4 +1,6 @@
 # SPFx Fantastic 40 Web Parts
+*Important:* currently its only working with > node 12.. I use node 11.15.0 using NVM to switch between node version.. Hoping to fix this issue in the future. 
+
 I've forked this project to try and keep it active. 
 
 The original can be found here: https://github.com/OlivierCC/spfx-40-fantastics
@@ -8,6 +10,8 @@ Fix #1: Updated packages.json so that it builds properly.
 Update #1: Made Tile Menu work in Full screen mode.
 
 Update #2 Updated CDN.
+
+Update #3 Added tiles_min_columns, tiles_max_columns, tiles_justified_row_height options to tile gallery (see unitegallery - https://unitegallery.net/)
 
 # The MIT License (MIT)
 
