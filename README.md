@@ -1,19 +1,17 @@
 # SPFx Fantastic 40 Web Parts
-*Important:* currently its only working with > node 12.. I use node 11.15.0 using NVM to switch between node version.. Hoping to fix this issue in the future. 
+*Important:* currently its only working with < node 12. I use node 10.22.0 (https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment).
 
-I've forked this project to try and keep it active. 
+I've forked this project from https://github.com/SharePointPro/spfx-40-fantastics-Sppro
 
 The original can be found here: https://github.com/OlivierCC/spfx-40-fantastics
 
-Fix #1: Updated packages.json so that it builds properly.
+Update #1: Add ability to customise accordion via custom CSS.
 
-Update #1: Made Tile Menu work in Full screen mode.
+Update #2 Add ability to collapse accordion by default.
 
-Update #2 Updated CDN.
+Update #3 Update CKEditor to 4.15.0 for accordion and rich text web parts.
 
-Update #3 Added tiles_min_columns, tiles_max_columns, tiles_justified_row_height options to tile gallery (see unitegallery - https://unitegallery.net/)
-
-Update #4: Added polyfill.css to Tilesmenu webpart as it was not displaying some icons.. TODO : add this file to all webparts.
+Note: With a standard text editor web part on the same page with an accordion web part or rich text editor web part. You will get errors and things won't work. This is because of the standard text editor web part also using a version of CKEditor which is conflicting with the one loaded with accordion or rich text.
 
 
 # The MIT License (MIT)
