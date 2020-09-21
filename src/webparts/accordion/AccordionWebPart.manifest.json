@@ -19,6 +19,9 @@
       "animate": true,
       "speed": 200,
       "heightStyle": "auto",
+      "customCSS": "",
+      "iconHeader": "ui-icon-triangle-1-e",
+      "iconActiveHeader": "ui-icon-triangle-1-s",
       "tabs": [
         { "Title": "Elementum", "Content": "<h1>Lorem ipsum dolor sit amet</h1><p>consectetur adipiscing elit. Fusce fringilla neque id metus egestas, vitae pharetra arcu porttitor. Nullam consequat id urna eu pellentesque. Fusce ut velit pellentesque, ornare libero sit amet, tristique neque. Cras   incidunt et nisl nec mattis. Proin nisi nunc, rhoncus ac laoreet eget, pulvinar quis nisl. Vestibulum libero massa, eleifend ut suscipit et, aliquet id lorem. Aliquam in ornare arcu. Curabitur non turpis tortor.</p> <p>Nunc vehicula convallis augue, a molestie elit feugiat id. Fusce semper fermentum est vel viverra. Nam pellentesque tempus tempus. In molestie rutrum maximus. Pellentesque eget nulla neque. Phasellus egestas tempus eros, et fermentum sem mattis eget. Fusce vulputate nisl et mauris condimentum, non semper nisl elementum. Duis placerat purus id libero aliquet, at fermentum nisi malesuada. Morbi congue orci id ipsum pellentesque, non consequat enim fringilla.</p>"},
         { "Title": "Tab 2", "Content": "<b>Sample with rich html</b>"},
