@@ -12,6 +12,7 @@ Update #2 Add ability to collapse accordion by default.
 Update #3 Update CKEditor to 4.15.0 for accordion and rich text web parts.
 
 Note: With a standard text editor web part on the same page with an accordion web part or rich text editor web part. You will get errors and things won't work. This is because of the standard text editor web part also using a version of CKEditor which is conflicting with the one loaded with accordion or rich text. 
+
 Wordaround: Where you need to use an accordion web part on a page, instead of using a standard text web part. Use the Rich Text web part to achieve the same functionality.
 
 
