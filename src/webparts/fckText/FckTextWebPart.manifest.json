@@ -15,7 +15,8 @@
     "officeFabricIconFontName": "ClearFormatting",
     "properties": {
       "text": "",
-      "inline": true
+      "inline": true,
+      "transparentbg": false
     }
   }]
 }

@@ -14,9 +14,18 @@ import {
 import { DisplayMode, Version } from "@microsoft/sp-core-library";
 import { Environment, EnvironmentType } from "@microsoft/sp-core-library";
 
+import { loadStyles } from '@microsoft/load-themed-styles';
+
+//Set fcktext and ckeditable styles
+loadStyles('.cke_editable a { color: "[theme: themePrimary, default: #038387]" !important; font-size: 18px !important; } .fcktext a { color: "[theme: themePrimary, default: #038387]"; font-size: 18px !important; } .fcktext { font-family: "Segoe UI", "Segoe UI Web(West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif !important; font-weight: 400 !important; font-size: 18px !important; line-height: 1.4 !important} .cke_editable p { font-size: 18px; line-height: 1.4 }');
+
 import * as strings from "fckTextStrings";
 import { IFckTextWebPartProps } from "./IFckTextWebPartProps";
 import { SPComponentLoader } from "@microsoft/sp-loader";
+
+//Loads JQuery & JQuery UI
+require('jquery');
+import * as $ from 'jquery';
 
 export default class FckTextWebPart extends BaseClientSideWebPart<
     IFckTextWebPartProps
@@ -70,14 +79,8 @@ export default class FckTextWebPart extends BaseClientSideWebPart<
             //Edit mode
             var html = "";
             html += "<style>.cke .cke_top {display: block !important;} </style>";
-            html +=
-                "<textarea name='" +
-                this.guid +
-                "-editor' id='" +
-                this.guid +
-                "-editor'>" +
-                this.properties.text +
-                "</textarea>";
+
+            html += "<textarea name='" + this.guid + "-editor' id='" + this.guid + "-editor'>" + this.properties.text + "</textarea>";
             this.domElement.innerHTML = html;
 
             var ckEditorCdn: string = "//cdn.ckeditor.com/4.15.0/full/ckeditor.js";
@@ -86,14 +89,34 @@ export default class FckTextWebPart extends BaseClientSideWebPart<
             }).then((CKEDITOR: any): void => {
                 if (this.properties.inline == null || this.properties.inline === false)
                     CKEDITOR.replace(this.guid + "-editor", {
-                        skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/'
+                        skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/',
+                        contentsCss: 'body { font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif; }',
+                        format_tags: 'p;h1;h2;h3',
+                        format_p: { element: 'p', name: "Normal", styles: { 'font-size': '18px', 'font-weight': '400', 'line-height': '1.4' } },
+                        format_h1: { element: 'h1', name: "Heading 1", styles: { 'font-size': '28px', 'font-weight': '600' } },
+                        format_h2: { element: 'h2', name: "Heading 2", styles: { 'font-size': '24px', 'font-weight': '600' } },
+                        format_h3: { element: 'h3', name: "Heading 3", styles: { 'font-size': '20px', 'font-weight': '600' } },
+                        extraAllowedContent: 'p h1 h2 h3',
+                        font_names: 'Segoe UI;Arial;Comic Sans MS;Courier New;Georgia;Lucida Sans Unicode;Tahoma;Times New Roman;Trebuchet MS;Verdana',
+                        font_defaultLabel: 'Segoe UI',
+                        fontSize_defaultLabel: '18px'
                     });
                 else
                     //Disable CKEditor auto attaching inline to editable elements
                     CKEDITOR.disableAutoInline = true;
 
                     CKEDITOR.inline(this.guid + "-editor", {
-                        skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/'
+                        skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/',
+                        contentsCss: 'body { font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif; }',
+                        format_tags: 'p;h1;h2;h3',
+                        format_p: { element: 'p', name: "Normal", styles: { 'font-size': '18px', 'font-weight': '400', 'line-height': '1.4' } },
+                        format_h1: { element: 'h1', name: "Heading 1", styles: { 'font-size': '28px', 'font-weight': '600' } },
+                        format_h2: { element: 'h2', name: "Heading 2", styles: { 'font-size': '24px', 'font-weight': '600' } },
+                        format_h3: { element: 'h3', name: "Heading 3", styles: { 'font-size': '20px', 'font-weight': '600' } },
+                        extraAllowedContent: 'p h1 h2 h3',
+                        font_names: 'Segoe UI;Arial;Comic Sans MS;Courier New;Georgia;Lucida Sans Unicode;Tahoma;Times New Roman;Trebuchet MS;Verdana',
+                        font_defaultLabel: 'Segoe UI',
+                        fontSize_defaultLabel: '18px'
                     });
 
                 for (var i in CKEDITOR.instances) {
@@ -111,8 +134,21 @@ export default class FckTextWebPart extends BaseClientSideWebPart<
                 }
             });
         } else {
+
             //Read Mode
-            this.domElement.innerHTML = this.properties.text;
+            if (this.properties.transparentbg == null || this.properties.transparentbg === false) {
+                html = '<div class="fcktext" id="' + this.guid + '">';
+                html += this.properties.text;
+                this.domElement.innerHTML = html;
+                $('#' + this.guid).closest(".ControlZone--emphasisBackground").removeAttr("style");
+            }
+            else {
+                //Transparent background
+                html = '<div class="fcktext" style="opacity: 1.0;" id="' + this.guid + '">';
+                html += this.properties.text;
+                this.domElement.innerHTML = html;
+                $('#' + this.guid).closest(".ControlZone--emphasisBackground").css("background-color", "rgba(0, 0, 0, 0)!important");
+            }
         }
     }
 
@@ -165,6 +201,9 @@ export default class FckTextWebPart extends BaseClientSideWebPart<
                             groupFields: [
                                 PropertyPaneToggle("inline", {
                                     label: strings.Inline
+                                }),
+                                PropertyPaneToggle("transparentbg", {
+                                    label: strings.TransparentBG
                                 })
                             ]
                         }

@@ -14,6 +14,12 @@ import {
   PropertyPaneSlider,
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
+
+import { loadStyles } from '@microsoft/load-themed-styles';
+
+//Set ui-widget default font to SPO default, a link color to SP primary theme colour, font size and line height
+loadStyles('.cke_editable a { color: "[theme: themePrimary, default: #038387]" !important; font-size: 18px !important; } .ui-widget-content a { color: "[theme: themePrimary, default: #038387]" !important; font-size: 18px !important; } .ui-widget { font-family: "Segoe UI", "Segoe UI Web(West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif !important; font-weight: 400 !important; font-size: 18px !important; line-height: 1.4 !important } .cke_editable p { font-size: 18px; line-height: 1.4 }');
+
 import { DisplayMode, Version } from '@microsoft/sp-core-library';
 import { SPComponentLoader } from '@microsoft/sp-loader';
 import { Environment, EnvironmentType } from '@microsoft/sp-core-library';
@@ -85,7 +91,7 @@ export default class AccordionWebPart extends BaseClientSideWebPart<IAccordionWe
 
         var html = '';
 
-        html += "<style>.cke .cke_top {display: block !important;} </style>";
+        html += "<style>.cke .cke_top {display: block !important;}</style>";
 
         //rewrite some accordion css classes properties
         if (this.properties.classesUIAccordionCustomCSS !== "") {
@@ -140,7 +146,17 @@ export default class AccordionWebPart extends BaseClientSideWebPart<IAccordionWe
                     //If mode is not inline, loads the script with the replace method
                     for (var tab = 0; tab < this.properties.tabs.length; tab++) {
                         CKEDITOR.replace(this.guid + '-editor-' + tab, {
-                            skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/'
+                            skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/',
+                            contentsCss: 'body { font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif; }',
+                            format_tags: 'p;h1;h2;h3',
+                            format_p: { element: 'p', name: "Normal", styles: { 'font-size': '18px', 'font-weight': '400', 'line-height': '1.4' } },
+                            format_h1: { element: 'h1', name: "Heading 1", styles: { 'font-size': '28px', 'font-weight': '600' } },
+							format_h2: { element : 'h2', name: "Heading 2", styles : { 'font-size' : '24px', 'font-weight' : '600' } },
+                            format_h3: { element: 'h3', name: "Heading 3", styles: { 'font-size': '20px', 'font-weight': '600' } },
+                            extraAllowedContent: 'p h1 h2 h3',
+                            font_names: 'Segoe UI;Arial;Comic Sans MS;Courier New;Georgia;Lucida Sans Unicode;Tahoma;Times New Roman;Trebuchet MS;Verdana',
+                            font_defaultLabel: 'Segoe UI',
+                            fontSize_defaultLabel: '18px'
                         });
                     }
                 }
@@ -151,7 +167,17 @@ export default class AccordionWebPart extends BaseClientSideWebPart<IAccordionWe
                     //Mode is inline, so loads the script with the inline method
                     for (var tab2 = 0; tab2 < this.properties.tabs.length; tab2++) {
                         CKEDITOR.inline(this.guid + '-editor-' + tab2, {
-                            skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/'
+                            skin: 'moono-lisa,//cdn.ckeditor.com/4.15.0/full-all/skins/moono-lisa/',
+                            contentsCss: 'body { font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif; }',
+                            format_tags: 'p;h1;h2;h3',
+                            format_p: { element: 'p', name: "Normal", styles: { 'font-size': '18px', 'font-weight': '400', 'line-height': '1.4' } },
+                            format_h1: { element: 'h1', name: "Heading 1", styles: { 'font-size': '28px', 'font-weight': '600' } },
+                            format_h2: { element: 'h2', name: "Heading 2", styles: { 'font-size': '24px', 'font-weight': '600' } },
+                            format_h3: { element: 'h3', name: "Heading 3", styles: { 'font-size': '20px', 'font-weight': '600' } },
+                            extraAllowedContent: 'p h1 h2 h3',
+                            font_names: 'Segoe UI;Arial;Comic Sans MS;Courier New;Georgia;Lucida Sans Unicode;Tahoma;Times New Roman;Trebuchet MS;Verdana',
+                            font_defaultLabel: 'Segoe UI',
+                            fontSize_defaultLabel: '18px'
                         });
                     }
                 }

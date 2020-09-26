@@ -6,8 +6,9 @@
  * Copyright (c) 2016
  */
 export interface IFckTextWebPartProps {
-  text: string;
-  theme: string;
-  mode: string;
-  inline: boolean;
+    text: string;
+    theme: string;
+    mode: string;
+    inline: boolean;
+    transparentbg: boolean;
 }
